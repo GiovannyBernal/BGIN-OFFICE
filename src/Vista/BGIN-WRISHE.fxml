@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="PanelD" prefHeight="687.0" prefWidth="1280.0" style="-fx-background-color: #006dba;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.WRISHEController">
+   <children>
+      <TextArea fx:id="TXTdocumento" layoutX="369.0" layoutY="75.0" prefHeight="573.0" prefWidth="537.0" />
+      <Label fx:id="LBLurl" alignment="CENTER" contentDisplay="CENTER" layoutX="893.0" layoutY="665.0" prefHeight="16.0" prefWidth="373.0" text="URL" />
+      <Label fx:id="LBLtitle" alignment="CENTER" layoutX="369.0" layoutY="49.0" prefHeight="26.0" prefWidth="537.0" text="Titulo" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="29.0" prefWidth="208.0" style="-fx-background-radius: 10px;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#NuevoM" text="Nuevo" />
+                  <MenuItem mnemonicParsing="false" onAction="#AbrirM" text="Abrir" />
+                  <MenuItem mnemonicParsing="false" onAction="#GuardarM" text="Guardar" />
+                  <MenuItem mnemonicParsing="false" onAction="#GuardarComoM" text="Guardar Como" />
+                  <MenuItem mnemonicParsing="false" onAction="#Salir" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Editar">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Preferencias" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>
