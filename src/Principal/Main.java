@@ -21,10 +21,11 @@ public class Main extends Application{
         
         Parent root = FXMLLoader.load(getClass().getResource("../Vista/Principal.fxml"));
         
-        Scene scene = new Scene(root, 1280, 720);
+        Scene scene = new Scene(root, 1280, 700);
         
         stage.setTitle("BGIN-OFFICE");
         stage.setScene(scene);
+        stage.centerOnScreen();
         stage.show();
         
     }
